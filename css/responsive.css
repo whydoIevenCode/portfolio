@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+  /* header */
+
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 900px) {
+  /* header */
+
+  html {
+    font-size: 50%;
+  }
+  .row {
+    padding: 0 3rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 600px) {
+  /* header */
+  html {
+    font-size: 45%;
+  }
+  .row {
+    padding: 0 3rem;
+  }
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+  .side {
+    width: 100%;
+    float: none;
+    height: 50%;
+  }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
