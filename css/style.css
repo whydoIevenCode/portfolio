@@ -15,7 +15,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: var(--body-color);
   color: var(--color-text-primary);
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
@@ -27,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   z-index: 50;
@@ -55,13 +54,17 @@ body {
   animation: bounce 0.4s ease;
 }
 .header {
+  background-color: var(--body-color);
   height: 100vh;
-  width: 100vw;
   position: relative;
+  overflow: hidden;
+}
+.header-svg {
+  z-index: 1;
 }
 .blob-img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
   width: 60rem;
   position: absolute;
   top: 50%;
@@ -97,7 +100,7 @@ body {
   border-radius: 4px;
   position: relative;
   transition: all 0.4s;
-  z-index: 5;
+  z-index: 10;
   text-transform: capitalize;
   letter-spacing: 0.2px;
   font-family: inherit;
@@ -132,7 +135,81 @@ body {
 .name {
   color: var(--primary-color);
 }
+/* about me */
+.about-me {
+  padding: 10rem 0;
+  background-color: rgb(255, 255, 255);
+}
+.margin-bot {
+  margin-bottom: 2rem;
+}
+.heading-secondary {
+  font-size: 3.6rem;
+}
+.about-me__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-me__text-box {
+  flex-basis: 50%;
+  padding: 0 3rem;
+}
+.about-me__skills {
+  flex-basis: 50%;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill-box {
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #2c2c2c;
+  margin: 3rem;
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.progress-bar {
+  width: 160px;
+  height: 160px;
+  border: 18px solid #eee;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotateZ(-90deg);
+}
+.skill-svg .circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-dasharray: 472;
 
+  stroke-width: 20px;
+}
+.skill-txt {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-me .paragraph {
+  font-size: 1.8rem;
+}
 /* cursor */
 /* #cursor {
   width: 2.5rem;

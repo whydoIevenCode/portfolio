@@ -17,6 +17,9 @@
   .heading-primary {
     font-size: 3.6rem;
   }
+  .about-me {
+    padding: 10rem 4rem;
+  }
 }
 @media (max-width: 600px) {
   /* header */
@@ -37,5 +40,17 @@
   .icon {
     width: 4rem;
     height: 4rem;
+  }
+  .about-me__container {
+    flex-direction: column;
+  }
+  .about-me__skills {
+    flex-basis: 100%;
+  }
+  .about-text-box {
+    flex-basis: 100%;
+  }
+  .about-me {
+    padding: 7rem 0;
   }
 }
