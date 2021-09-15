@@ -56,8 +56,10 @@ body {
 .header {
   background-color: var(--body-color);
   height: 100vh;
+
   position: relative;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
 }
 .header-svg {
   z-index: 1;
@@ -144,7 +146,7 @@ body {
   margin-bottom: 2rem;
 }
 .heading-secondary {
-  font-size: 3.6rem;
+  font-size: 5.6rem;
 }
 .about-me__container {
   display: flex;
@@ -209,6 +211,22 @@ body {
 }
 .about-me .paragraph {
   font-size: 1.8rem;
+}
+
+/* portfolio */
+
+.portfolio {
+  padding: 10rem 0;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.two-side {
+  flex-basis: 50%;
+  margin: 0 3rem;
 }
 /* cursor */
 /* #cursor {
